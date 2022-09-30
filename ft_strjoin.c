@@ -38,6 +38,7 @@ char *ft_strjoin(char const *s1, char const *s2)
   i = 0;
   res = fill_join(s1, res, i);
   res = fill_join(s2, res, ft_strlen(s1));
+  res[size + 1] = 0;
   return (res);
 }
 
