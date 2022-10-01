@@ -37,6 +37,5 @@ int main()
 	ret = ft_strstr(haystack, needle);
 
 	printf("The substring is: %s\n", ret);
-
 	return (0);
 }
