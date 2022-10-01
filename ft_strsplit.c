@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int count_word(char const *s, char c)
+static int count_word(char const *s, char c)
 {
   int i;
   int count;
@@ -19,7 +19,7 @@ int count_word(char const *s, char c)
   return (count);
 }
 
-int count_letter(char const *s, char c)
+static int count_letter(char const *s, char c)
 {
   int i;
 
