@@ -11,7 +11,7 @@ void	ft_putnbr(int n)
 
   nb = n;
   if (nb > 2147483647 || nb < -2147483648)
-        return ;
+        return;
   if (nb < 0)
   {
     nb *= - 1;
