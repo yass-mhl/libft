@@ -1,15 +1,5 @@
 #include "libft.h"
 
-int ft_strlen(const char *s)
-{
-  unsigned int i;
-  i = 0;
-
-  while(s[i])
-    i++;
-  return (i);
-}
-
 static char *fill_join(char const *s, char *tmp, unsigned int i)
 {
   unsigned int y;
