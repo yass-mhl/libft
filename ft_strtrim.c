@@ -1,16 +1,5 @@
 #include "libft.h"
 
-
-static int ft_strlen(const char *s)
-{
-  unsigned int i;
-  i = 0;
-
-  while(s[i])
-    i++;
-  return (i);
-}
-
 static char *remove_first_blank(char *str)
 {
   unsigned int i;
@@ -26,7 +15,6 @@ static char *remove_first_blank(char *str)
 
 static int size_without_blank(char const *str)
 {
-  unsigned int i;
   int size;
 
   size = ft_strlen(str);
@@ -37,34 +25,13 @@ static int size_without_blank(char const *str)
   return (size + 1);
 }
 
-char *ft_strncpy(char *dest, const char *src, size_t n)
-{
-  size_t i;
-  i = 0;
-
-  while (i < n && src[i])
-  {
-    dest[i] = src[i];
-    i++;
-  }
-  while(i < n)
-  {
-    dest[i] = 0;
-    i++;
-  }
-  return (dest);
-}
-
 char  *ft_strtrim(char const *s)
 {
   char *res;
   char *tmp;
-  unsigned int i;
   int len;
 
   len = 0;
-  i = 0;
-
   tmp = (char *)s;
   if (tmp[0] != 0)
   {
