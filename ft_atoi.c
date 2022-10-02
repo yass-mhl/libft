@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int ft_atoi(const char *str)
 {
   int i;
@@ -23,15 +25,13 @@ int ft_atoi(const char *str)
 	return (res * neg);
 }
 
-#include "libft.h"
+// int main(void)
+// {
+// 	char *str;
+// 	int p;
 
-int main(void)
-{
-	char *str;
-	int p;
-
-	str = "-2147483648";
-	p = ft_atoi(str);
-	printf("%d", p);
-	return (0);
-}
+// 	str = "-2147483648";
+// 	p = ft_atoi(str);
+// 	printf("%d", p);
+// 	return (0);
+// }
