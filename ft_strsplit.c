@@ -5,6 +5,7 @@ static int count_word(char const *s, char c)
   int i;
   int count;
 
+  count = 0;
   i = 0;
   while (s[i] && s[i] == c)
     i++;
