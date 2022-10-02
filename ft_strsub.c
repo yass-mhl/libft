@@ -3,7 +3,7 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
   char *res;
-  int i;
+  size_t i;
 
   res = ft_memalloc(len + 1);
   if (!res)
