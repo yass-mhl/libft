@@ -22,16 +22,16 @@ char *ft_strnstr(const char *str, const char *to_find, size_t len)
   return (0);
 }
 
-int main()
-{
-	char haystack[20] = "TutorialsPoint";
-	char needle[10] = "als";
-	char *ret;
+// int main()
+// {
+// 	char haystack[20] = "TutorialsPoint";
+// 	char needle[10] = "als";
+// 	char *ret;
 
-	ret = ft_strnstr("lorem ipsum dolor sit amet", "sit", 10);
+// 	ret = ft_strnstr("lorem ipsum dolor sit amet", "sit", 10);
 
-	printf("%s\n", ret);
-	printf("%s", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 17));
+// 	printf("%s\n", ret);
+// 	printf("%s", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 17));
 
-	return (0);
-}
+// 	return (0);
+// }

@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int ft_isascii(int c)
 {
 //   unsigned int	u;
@@ -10,11 +12,9 @@ int ft_isascii(int c)
   return (c >= 0 && c <= 127);
 }
 
-#include "libft.h"
-
-int main(void)
-{
-	char c = '±';
-	printf("%d", ft_isascii(c));
-	return (0);
-}
+// int main(void)
+// {
+// 	char c = '±';
+// 	printf("%d", ft_isascii(c));
+// 	return (0);
+// }

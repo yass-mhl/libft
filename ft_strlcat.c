@@ -28,13 +28,13 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
   return (total);
 }
 
-int main()
-{
-	char s1[10] = "hello";
-	//char s2[20] = "gchijklmnopqr";
-	//int ret;
-	//int len = 11;
+// int main()
+// {
+// 	char s1[10] = "hello";
+// 	//char s2[20] = "gchijklmnopqr";
+// 	//int ret;
+// 	//int len = 11;
 
-	printf("%zu", ft_strlcat(s1, "cat", 0));
-	return (0);
-}
+// 	printf("%zu", ft_strlcat(s1, "cat", 0));
+// 	return (0);
+// }

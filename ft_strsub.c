@@ -44,12 +44,12 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
   return (res);
 }
 
-int main(void)
-{
-	char *str1 = "lorem ispusm dolor sit amet";
-	unsigned int start = 7;
-	int len = 10;
+// int main(void)
+// {
+// 	char *str1 = "lorem ispusm dolor sit amet";
+// 	unsigned int start = 7;
+// 	int len = 10;
 
-	printf("%s", ft_strsub(str1, start, len));
-	return (0);
-}
+// 	printf("%s", ft_strsub(str1, start, len));
+// 	return (0);
+// }

@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int ft_toupper(int c)
 {
   if (c >= 'a' && c <= 'z')
@@ -5,10 +7,8 @@ int ft_toupper(int c)
   return (c);
 }
 
-#include <stdio.h>
-
-int main(int ac, char **av)
-{
-  (void)ac;
-  printf("%c\n", ft_toupper(av[1][0]));
-}
+// int main(int ac, char **av)
+// {
+//   (void)ac;
+//   printf("%c\n", ft_toupper(av[1][0]));
+// }

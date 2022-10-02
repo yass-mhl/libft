@@ -6,8 +6,8 @@ void  ft_putstr(char const *s)
     write(1, s++, 1);
 }
 
-int main(int ac, char **av)
-{
-  (void)ac;
-  ft_putstr(av[1]);
-}
+// int main(int ac, char **av)
+// {
+//   (void)ac;
+//   ft_putstr(av[1]);
+// }

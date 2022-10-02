@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int ft_strcmp(char *s1, char *s2)
 {
   int i;
@@ -8,17 +10,15 @@ int ft_strcmp(char *s1, char *s2)
   return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-#include "libft.h"
+// int	main(void)
+// {
+// 	char *s1;
+// 	char *s2;
+// 	int ret;
 
-int	main(void)
-{
-	char *s1;
-	char *s2;
-	int ret;
-
-	s1 = "test\200";
-	s2 = "test\0";
-	ret = ft_strcmp(s1, s2);
-	printf("%d", ret);
-	return (0);
-}
+// 	s1 = "test\200";
+// 	s2 = "test\0";
+// 	ret = ft_strcmp(s1, s2);
+// 	printf("%d", ret);
+// 	return (0);
+// }

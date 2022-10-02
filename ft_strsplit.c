@@ -69,16 +69,16 @@ char			**ft_strsplit(char const *s, char c)
   return (res);
 }
 
-int main(int ac, char **av)
-{
-	(void)ac;
-  char **res;
-  int i;
+// int main(int ac, char **av)
+// {
+// 	(void)ac;
+//   char **res;
+//   int i;
 
-  res = ft_strsplit(av[1], av[2][0]);
-  i = 0;
-  while (*res)
-  {
-    printf("%s\n", *res++);
-  }
-}
+//   res = ft_strsplit(av[1], av[2][0]);
+//   i = 0;
+//   while (*res)
+//   {
+//     printf("%s\n", *res++);
+//   }
+// }

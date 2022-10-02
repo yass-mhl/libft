@@ -18,13 +18,12 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
   return (str1[i] - str2[i]);
 }
 
-#include <stdio.h>
-int main(void)
-{
-	char str1[50] = "mahmudul hasan";
-	char str2[50] = "mahmudul hapan";
-	int n = 14;
-  printf("vrai memcmp : %d\n", memcmp(str1, str2, n));
-	printf("Mon ft_memcmp : %d", ft_memcmp(str1, str2, n));
-	return (0);
-}
+// int main(void)
+// {
+// 	char str1[50] = "testtttt salut";
+// 	char str2[50] = "testtttt akhyy";
+// 	int n = 14;
+//   printf("vrai memcmp : %d\n", memcmp(str1, str2, n));
+// 	printf("Mon ft_memcmp : %d", ft_memcmp(str1, str2, n));
+// 	return (0);
+// }
