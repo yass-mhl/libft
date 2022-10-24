@@ -10,11 +10,11 @@ void  *ft_memalloc(size_t size)
   return (ptr);
 }
 
-int main(void)
-{
-    int size;
+// int main(void)
+// {
+//     int size;
 
-    size = 3;
-    ft_memalloc(size);
-    return (0);
-}
+//     size = 3;
+//     ft_memalloc(size);
+//     return (0);
+// }
