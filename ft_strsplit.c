@@ -1,71 +1,64 @@
 #include "libft.h"
 
-static int count_word(char const *s, char c)
+ssize_t    nombre_de_mot(char *str, char c)
 {
-  int i;
-  int count;
+    int    i;
+    int    j;
 
-  count = 0;
-  i = 0;
-  while (s[i] && s[i] == c)
-    i++;
-  if (s[i] == 0)
-    return (0);
-  while (s[i])
-  {
-    if (s[i] == c && s[i+ 1] != c && s[i + 1] != 0)
-      count++;
-    i++;
-  }
-  return (count);
-}
-
-static int count_letter(char const *s, char c)
-{
-  int i;
-
-  i = 0;
-
-  while(s[i] && s[i] != c)
-    i++;
-  return (i);
-}
-
-char			**ft_strsplit(char const *s, char c)
-{
-  char **res;
-  int i;
-  int word;
-  int letter;
-
-  if (s == NULL)
-    return (0);
-  res = (char **)malloc(sizeof(char *) * (count_word(s, c) + 1));
-  if (!res)
-    return (NULL);
-  i = 0;
-  word = -1;
-  while (s[i])
-  {
-    while (s[i] == c && s[i])
-      i++;
-    if (s[i])
+    i = 0;
+    j = 0;
+    while (str[i] != '\0')
     {
-      word++;
-      res[word] = (char *)malloc(sizeof(char) * count_letter(&s[i], c) + 1);
-      if (!res[word])
-        return (NULL);
-      letter = 0;
-      while (s[i] != c && s[i])
-      {
-        res[word][letter] = s[i];
-        letter++;
-        i++;
-      }
-      res[word][letter] = 0;
+        if (str[i] != c)
+        {
+            j++;
+            while (str[i] != c && str[i] != '\0')
+                i++;
+        }
+        else
+            i++;
     }
-  }
-  word++;
-  res[word] = 0;;
-  return (res);
+    return (j);
+}
+
+char    **ft_split(char **split, char *str, char c, size_t k)
+{
+    size_t        i;
+    size_t        start;
+    size_t        j;
+
+    i = 0;
+    start = 0;
+    j = 0;
+    while (str[i] && j < k)
+    {
+        if (str[i] != c)
+        {
+            start = i;
+            while (str[i] != c && str[i])
+                i++;
+            split[j] = ft_strsub(str, start, i - start);
+            j++;
+        }
+        else
+            i++;
+    }
+    split[j] = NULL;
+    return (split);
+}
+
+char    **ft_strsplit(char const *str, char c)
+{
+    char        **split;
+    size_t        k;
+
+    if (!str)
+        return (NULL);
+    k = nombre_de_mot((char *)str, c);
+    split = NULL;
+    split = (char **)malloc((k + 1) * sizeof(char *));
+    if (!split)
+        return (NULL);
+    split = ft_split(split, (char *)str, c, k);
+    return (split);
 }
