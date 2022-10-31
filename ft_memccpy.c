@@ -14,15 +14,3 @@ void  *ft_memccpy(void *dest, const void *src, int c, size_t n)
   }
   return (NULL);
 }
-
-
-// int main(void)
-// {
-// 	char src[50] = "mahmudulhasanjony";
-// 	char dest[50];
-// 	char c = 'n';
-
-// 	ft_memccpy(dest, src, c, 25);
-// 	printf("%s", dest);
-// 	return (0);
-// }

@@ -21,21 +21,3 @@ char *ft_strstr(const char *str, const char *to_find)
   }
   return (0);
 }
-
-// int main(int ac, char **av)
-// {
-//   (void)ac;
-//   printf("%s", ft_strstr(av[1], av[2]));
-// }
-
-// int main()
-// {
-// 	char haystack[20] = "TutorialsPoint";
-// 	char needle[10] = "oin";
-// 	char *ret;
-
-// 	ret = ft_strstr(haystack, needle);
-
-// 	printf("The substring is: %s\n", ret);
-// 	return (0);
-// }

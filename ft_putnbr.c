@@ -20,9 +20,3 @@ void	ft_putnbr(int n)
 	else
 		ft_putchar(nb + '0');
 }
-
-// int main(int ac, char **av)
-// {
-//   (void)ac;
-//   ft_putnbr(atoi(av[1]));
-// }

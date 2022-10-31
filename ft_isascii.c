@@ -11,10 +11,3 @@ int ft_isascii(int c)
 //   return (0);
   return (c >= 0 && c <= 127);
 }
-
-// int main(void)
-// {
-// 	char c = '±';
-// 	printf("%d", ft_isascii(c));
-// 	return (0);
-// }

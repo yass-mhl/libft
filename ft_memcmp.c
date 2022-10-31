@@ -11,19 +11,12 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
   str2 = (unsigned char *)s2;
   i = 0;
 
-  while (str1[i] == str2[i] && i < n)
+  while (i < n)
   {
+    if (str1[i] != str2[i])
+      return (str1[i] - str2[i]);
     i++;
   }
-  return (str1[i] - str2[i]);
-}
+  return (0);
 
-// int main(void)
-// {
-// 	char str1[50] = "testtttt salut";
-// 	char str2[50] = "testtttt akhyy";
-// 	int n = 14;
-//   printf("vrai memcmp : %d\n", memcmp(str1, str2, n));
-// 	printf("Mon ft_memcmp : %d", ft_memcmp(str1, str2, n));
-// 	return (0);
-// }
+}

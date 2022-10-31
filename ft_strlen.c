@@ -9,12 +9,3 @@ size_t ft_strlen(const char *s)
     i++;
   return (i);
 }
-
-// int main(void)
-// {
-// 	char *str;
-
-// 	str = "mahmudul";
-// 	printf("%zu", ft_strlen(str));
-// 	return (0);
-// }

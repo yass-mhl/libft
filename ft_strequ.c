@@ -35,12 +35,3 @@ int    ft_strequ(char const *s1, char const *s2)
     }
     return (1);
 }
-
-// int main(void)
-// {
-// 	char *str1 = "hello";
-// 	char *str2 = "";
-
-// 	printf("%d", ft_strequ(str1, str2));
-// 	return (0);
-// }

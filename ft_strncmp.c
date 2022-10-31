@@ -11,16 +11,3 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     i++;
   return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
-// int main(void)
-// {
-// 	char *s1;
-// 	char *s2;
-// 	int ret;
-
-// 	s1 = "zyxbcdefgh";
-// 	s2 = "abcdwxyz";
-// 	printf("%d", ft_strncmp(s1, s2, 4));
-// 	//printf("%d", ret);
-// 	return (0);
-// }

@@ -23,13 +23,3 @@ char *ft_strdup(const char *s)
   return (tab);
 }
 
-// int main(void)
-// {
-// 	char *str;
-
-// 	str = "mahmudul";
-// 	printf("Before Allocation: %s\n", str);
-// 	printf("After  Allocation: ");
-// 	printf("%s\n", ft_strdup(str));
-// 	return (0);
-// }

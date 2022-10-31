@@ -31,10 +31,3 @@ char *ft_strjoin(char const *s1, char const *s2)
   res[size + 1] = 0;
   return (res);
 }
-
-// int main(int ac, char **av)
-// {
-//   (void)ac;
-//   printf("%s", ft_strjoin(av[1], av[2]));
-//   return (0);
-// }

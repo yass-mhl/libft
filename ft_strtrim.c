@@ -47,12 +47,3 @@ char  *ft_strtrim(char const *s)
 
   return (res);
 }
-
-// int main(void)
-// {
-// 	char *str = "    \t salit   \0  ";
-// 	char *res;
-// 	res = ft_strtrim(str);
-// 	printf("%s", res);
-// 	return (0);
-// }

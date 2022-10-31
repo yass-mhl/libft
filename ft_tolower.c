@@ -6,9 +6,3 @@ int ft_tolower(int c)
     return (c + 32);
   return (c);
 }
-
-// int main(int ac, char **av)
-// {
-//   (void)ac;
-//   printf("%c\n", ft_toupper(av[1][0]));
-// }
